@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Mountainbikes</title>
+		<link rel="stylesheet" href="srtyles.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 id="toastyBike">BIKES SHOP</h1>
+
+			<div class="container-icon" id="icono-carrito">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					
+				</div>
+				<div id="carrito-contenedor">
+
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Raptor</p>
+								<span class="precio-producto-carrito"></span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+			<div id="carritoModal" class="modal">
+				<div class="modal-content">
+				  <span class="close" id="cerrarModal">&times;</span>
+				  <h2>Carrito de Compras</h2>
+				  <div id="carritoContenedor">Contenido del carrito se mostrará aquí</div>
+				  <div id="total-carrito">Total: $0.00</div>
+				  <button id="limpiar-carrito">Vaciar carrito</button>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="images/bluemountain.jfif"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Raptor</h2>
+					<p class="price">$150000</p>
+                    <p class="rodado">Rodado 29</p>
+					<button class="btn-add-cart" id="raptor-bike">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/yellowmoun.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Crazy</h2>
+					<p class="price">$145000</p>
+                    <p class="rodado">Rodado 26</p>
+					<button class="btn-add-cart" id="crazy-bike">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="images/greymountain.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>BMZ</h2>
+					<p class="price">$200000</p>
+                    <p class="rodado">Rodado 29</p>
+					<button class="btn-add-cart" id="bmz-bike">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/mixmountain.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>REDM</h2>
+					<p class="price">$500000</p>
+                    <p class="rodado">Rodado 29</p>
+					<button class="btn-add-cart" id="redm-bike">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/orangemountain.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>ORANG</h2>
+					<p class="price">$400000</p>
+                    <p class="rodado">Rodado 29</p>
+					<button class="btn-add-cart" id="orang-bike">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/redmountain.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>WONF</h2>
+					<p class="price">$300000</p>
+                    <p class="rodado">Rodado 26</p>
+					<button class="btn-add-cart" id="wonf-bike">Añadir al carrito</button>
+				</div>
+                
+			</div>
+		</div>
+
+
+		<script src="app.js"></script>
+		<script src="app1.js"></script>
+		<script src="data.json"></script>
+	</body>
+</html>

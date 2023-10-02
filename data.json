@@ -1,0 +1,38 @@
+[
+    {
+        "marca": "RAPTOR",
+        "rodado": 29,
+        "precio": 150000,
+        "imagen": ""
+    },
+    {
+        "marca": "CRAZY",
+        "rodado": 26,
+        "precio": 145000,
+        "imagen": ""
+    },
+    {
+        "marca": "BMZ",
+        "rodado": 29,
+        "precio": 200000,
+        "imagen": ""
+    },
+    {
+        "marca": "REDM",
+        "rodado": 29,
+        "precio": 500000,
+        "imagen": ""
+    },
+    {
+        "marca": "ORANG",
+        "rodado": 26,
+        "precio": 400000,
+        "imagen": ""
+    },
+    {
+        "marca": "WONF",
+        "rodado": 29,
+        "precio": 350000,
+        "imagen": ""
+    }
+]
